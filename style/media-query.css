@@ -1,0 +1,49 @@
+:root{
+    --cor1: #49a09d;
+    --cor2: #5f2c82;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, var(--cor1),var(--cor2));
+}
+
+main{
+    width:90%;
+    max-width: 900px;
+    display:flex;  
+}
+
+img{
+    height:100%;
+    width:90%;
+}
+
+.content{
+    width:200%;
+    max-width:400px;
+}
+
+#email,#password{
+    width:75%;
+    left:60%;
+}
+
+@media screen and (min-width: 992px){
+    main{
+        flex-direction:row-reverse;
+    }
+
+    img{
+        width:100%;
+    }
+
+    .content{
+        max-width: none;
+    }
+
+    #email,#password{
+        width:90%;
+        left:54%;
+    }
+}
