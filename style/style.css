@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #49a09d;
+    --cor2: #5f2c82;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cor2);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    width: 300px;
+    background-color: white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.479);
+}
+
+img{
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.content h1{
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.content{
+    margin: 10px;
+}
+
+.content p{
+    text-align: justify;
+    padding: 10px 0px;
+}
+
+form{
+    
+    margin:10px 0px;
+    display:flex;
+    flex-direction:column;
+}
+
+
+
+.email, .password{
+    background-color: var(--cor2);
+    margin: 10px 0px;
+    width: 100%;
+    border-radius:10px;
+    position: relative;
+}
+
+#person,#vpn_key{
+    font-size:32px;
+    color:white;
+    margin: 10px 0px 0px 10px;
+}
+
+#email, #password{
+    background-color: #60cfcc;
+    width: 80%;
+    padding:10px;
+    border-radius:10px;
+    position:absolute;
+    top:50%;
+    left:59%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.479);
+}
+
+#email:focus, #password:focus{
+    background-color: white;
+}
+
+#submit{
+    background-color: var(--cor1);
+    color: white;
+    padding:8px;
+    border-radius:10px;
+    font-size: 1em;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+#submit:hover, #forget_password:hover{
+    background-color:#49a09d93;
+    font-weight: bolder;
+}
+
+#forget_password{
+    background-color:rgba(255, 255, 255, 0.637);
+    padding:8px;
+    border-radius:10px;
+    cursor:pointer;
+    margin:10px 0px;
+}
+
+
+
+
