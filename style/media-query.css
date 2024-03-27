@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 :root{
     --cor1: #49a09d;
     --cor2: #5f2c82;
@@ -11,39 +13,30 @@ body{
 main{
     width:90%;
     max-width: 900px;
-    display:flex;  
+    display:flex;
+    justify-content: space-between; 
 }
 
-img{
-    height:100%;
-    width:90%;
+main .image{
+    width:40%;
+    height: 440px;
 }
-
 .content{
-    width:200%;
-    max-width:400px;
+    width:60%;
 }
 
-#email,#password{
-    width:75%;
-    left:60%;
-}
+
 
 @media screen and (min-width: 992px){
-    main{
-        flex-direction:row-reverse;
-    }
 
-    img{
-        width:100%;
+    main{
+        flex-direction: row-reverse;
+    }
+    .image{
+        width:50%;
     }
 
     .content{
-        max-width: none;
-    }
-
-    #email,#password{
-        width:90%;
-        left:54%;
+        width:60%;
     }
 }

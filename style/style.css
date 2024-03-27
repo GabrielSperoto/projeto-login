@@ -17,21 +17,24 @@ body{
 }
 
 main{
-    width: 300px;
+    width: 250px;
     background-color: white;
     position:absolute;
     top:50%;
     left:50%;
-    transform: translate(-50%,-50%);
     border-radius: 20px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.479);
-    
-   
+    overflow: hidden;
+    transform: translate(-50%,-50%);
+    transition: width .3s, height .3s;
 }
 
-img{
+.image{
+    background:  var(--cor2) url("../images/login-image.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
     width: 100%;
-    border-radius: 20px 20px 0px 0px;
+    height: 200px;
 }
 
 .content h1{
@@ -61,27 +64,24 @@ form{
     background-color: var(--cor2);
     margin: 10px 0px;
     width: 100%;
-    border-radius:10px;
+    border-radius:8px;
     position: relative;
 }
 
 #person,#vpn_key{
     font-size:32px;
     color:white;
-    margin: 10px 0px 0px 10px;
+    padding:10px;
+    width:40px;
 }
 
 #email, #password{
     background-color: #60cfcc;
-    width: 80%;
-    padding:10px;
-    border-radius:10px;
-    position:absolute;
-    top:50%;
-    left:59%;
-    transform: translate(-50%,-50%);
-    border-radius: 10px;
+    width: calc(100% - 45px);
+    padding:8px;
+    border-radius:8px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.479);
+    transform: translateY(-10px);
 }
 
 #email:focus, #password:focus{

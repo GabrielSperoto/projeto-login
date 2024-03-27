@@ -11,18 +11,18 @@
 </head>
 <body>
     <main>
-        <div class="image"><img src="images/login-image.jpg" alt="imagem-login"></div>
+        <div class="image"></div>
         <div class="content">
             <h1>Login</h1>
             <p>Seja bem vindo novamente. Faça login para acessar sua conta e poder fazer as congurações no seu ambiente.</p>
-            <form action="#" method="post">
+            <form action="#" method="post" autocomplete>
                 <div class="email">
                     <label for="email"><span id ="person" class="material-icons">person</span></label>
-                    <input type="email" name="email" id="email" placeholder="seu email" required>
+                    <input type="email" name="email" id="email" placeholder="seu email" required autocomplete="email">
                 </div>
                 <div class="password">
                     <label for="password"><span id="vpn_key"class="material-icons">vpn_key</span></label>
-                    <input type="password" name="password" id="password" placeholder="sua senha" required>
+                    <input type="password" name="password" id="password" placeholder="sua senha" required autocomplete="current-password">
                 </div>
                 <input type="submit" value="Entrar" id="submit">
                 <input type="button" value="Esqueci a senha" id="forget_password">
